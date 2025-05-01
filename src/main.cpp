@@ -1,7 +1,7 @@
 #include <iostream>
-#include"SavingsAccount.h"
-#include "CurrentAccount.h"
-#include "Bank.h"
+#include"../header/SavingsAccount.h"
+#include "../header/CurrentAccount.h"
+#include "../header/Bank.h"
 using namespace std;
 
 int main()

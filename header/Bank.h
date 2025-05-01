@@ -2,9 +2,9 @@
 #define BANK_H_INCLUDE
 
 #include <vector>
-#include "BankAccount.h"
-#include "CurrentAccount.h"
-#include "SavingsAccount.h"
+#include "../header/BankAccount.h"
+#include "../header/CurrentAccount.h"
+#include "../header/SavingsAccount.h"
 #include <memory>
 
 class Bank {

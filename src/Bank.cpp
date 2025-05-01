@@ -1,5 +1,5 @@
-#include"Bank.h"
-#include"BankAccount.h"
+#include"../header/Bank.h"
+#include"../header/BankAccount.h"
 #include<iostream>
 #include<algorithm>
 
@@ -8,12 +8,12 @@ void Bank::ajouter_account(CurrentAccount & obj)
 {
 
     //tab.push_back(new CurrentAccount(obj));
-      tab.push_back (make_unique <CurrentAccount>());
+      tab.push_back (make_unique <CurrentAccount>(obj));
 }
 void Bank::ajouter_account(SavingAccount & obj )
 {
     //tab.push_back(new SavingAccount(obj));
-   tab.push_back (make_unique <SavingAccount>());
+   tab.push_back (make_unique <SavingAccount>(obj));
 }
 void Bank::DisplayAccount(){
 
@@ -32,13 +32,13 @@ bool Bank::supprimer_account(string name ,int id)
         if ((*it)->getNom() == name && (*it)->getID() == id)
         {
             tab.erase(it);
-            cout<<"le compte a ete supprimé avec succes "<<endl;
+            cout<<"le compte a ete supprimï¿½ avec succes "<<endl;
             return true ;
         }
 
 
     }
-     cout<<"le compte n'est pas trouvé"<<endl;
+     cout<<"le compte n'est pas trouvï¿½"<<endl;
      return false ;
 
 }

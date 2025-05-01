@@ -1,4 +1,4 @@
-#include"SavingsAccount.h"
+#include"../header/SavingsAccount.h"
 
 #include <iostream>
 
@@ -21,7 +21,7 @@ if ((solde  - montant )<= seuil )
 }
 else
 {
-   cout<<"le retrait est fais avec succès "<<endl;
+   cout<<"le retrait est fais avec succï¿½s "<<endl;
    solde -= montant ;
    cout<<"votre solde est egale "<<solde<<endl;
 

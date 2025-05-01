@@ -1,5 +1,5 @@
-#include "CurrentAccount.h"
-#include "BankAccount.h"
+#include "../header/CurrentAccount.h"
+#include "../header/BankAccount.h"
 #include <iostream>
 using namespace std ;
 void CurrentAccount::affiche ()const {
@@ -17,14 +17,14 @@ if (montant < montant_autorise)
     {
     solde -= montant ;
     montant_autorise -= montant ;
-    cout<<"le retrait est fait avec succèes"<<endl;
+    cout<<"le retrait est fait avec succï¿½es"<<endl;
     cout <<"le maximum retarit valable est "<<montant_autorise<<endl;
 
     }
 else
     {
     cout<<"impossible de faire un retrait"<<endl;
-    cout<<"montant  n'est pas autorisé "<<endl;
+    cout<<"montant  n'est pas autorisï¿½ "<<endl;
     }
 
 }
